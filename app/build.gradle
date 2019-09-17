@@ -26,4 +26,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation name: 'jackson-databind', version: '2.10.0.pr2', group: 'com.fasterxml.jackson.core'
+    implementation name: 'jackson-core', version: '2.10.0.pr2', group: 'com.fasterxml.jackson.core'
+    implementation(
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.10.0.pr2']
+    )
+    implementation fileTree(dir: 'C:\\Users\\HP.LAPTOP-FDO81MFK\\jackson-core-jackson-core-2.10.0.pr2\\src\\main\\java', include: ['*.aar', '*.jar'], exclude: [])
 }
